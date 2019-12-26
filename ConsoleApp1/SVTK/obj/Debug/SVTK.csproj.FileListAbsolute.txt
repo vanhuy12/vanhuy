@@ -1,0 +1,7 @@
+C:\Users\Admin\source\repos\ConsoleApp1\SVTK\bin\Debug\SVTK.exe.config
+C:\Users\Admin\source\repos\ConsoleApp1\SVTK\bin\Debug\SVTK.exe
+C:\Users\Admin\source\repos\ConsoleApp1\SVTK\bin\Debug\SVTK.pdb
+C:\Users\Admin\source\repos\ConsoleApp1\SVTK\obj\Debug\SVTK.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\ConsoleApp1\SVTK\obj\Debug\SVTK.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\ConsoleApp1\SVTK\obj\Debug\SVTK.exe
+C:\Users\Admin\source\repos\ConsoleApp1\SVTK\obj\Debug\SVTK.pdb

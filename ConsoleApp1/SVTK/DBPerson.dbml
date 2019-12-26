@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Bai1tr113" Class="DBPersonDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-AD054TF\SQLEXPRESS;Initial Catalog=Bai1tr113;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="SVTK.Properties.Settings" SettingsPropertyName="Bai1tr113ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.KETQUA" Member="KETQUAs">
+    <Type Name="KETQUA">
+      <Column Name="MaSV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoSV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenSV" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Diem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaMH" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="MONHOC_KETQUA" Member="MONHOC" ThisKey="MaMH" OtherKey="MaMH" Type="MONHOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MONHOC" Member="MONHOCs">
+    <Type Name="MONHOC">
+      <Column Name="MaMH" Type="System.String" DbType="VarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenMH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoTiet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MONHOC_KETQUA" Member="KETQUAs" ThisKey="MaMH" OtherKey="MaMH" Type="KETQUA" />
+    </Type>
+  </Table>
+</Database>
