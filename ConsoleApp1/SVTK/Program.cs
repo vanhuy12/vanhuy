@@ -67,7 +67,7 @@ namespace SVTK
                 Console.WriteLine("----------MENU----------");
                 Console.WriteLine("1. Load Database.");
                 Console.WriteLine("2. Search Database.");
-                Console.WriteLine("3. Delete.");
+                Console.WriteLine("3. Exit.");
                 Console.WriteLine("Your choice ?");
                 choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
